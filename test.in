@@ -1,0 +1,20 @@
+'./'            # indir    ; Directory containing the data subdirectory
+'testdir'       # subdir   ; Subdirectory containing data to be read (and written)
+'CellData.bin'  # Celldata ; File containing cell parameters
+'GalData.dat'   # Galdata  ; File containing galaxy parameters
+'./'            # outdir   ; Directory containing subdirectory for IGMtransfer's output
+'test.bin'      # Ioutfile ; Output file from IGMtransfer / input for ProcessIGM
+'proc.dat'      # Poutfile ; Output file from ProcessIGM
+100             # n_write  ; Number of sightlines traced between each write
+100             # n_los    ; Number of sightlines per galaxy
+280             # SpecRes  ; Spectral resolution in bins
+1150. 1220.     # BW       ; Lower and upper values of wavelength interval in Angstrom
+1180. 1205.     # BW_stat  ; Wavelength interval in which to calculate "T(z)"
+1.5             # f_rvir   ; Distance in virial radii from galaxy centers to start sightlines
+.9              # r_eff    ; Fraction of total radius to be used for the IGM RT
+'SMC'           # DustType ; 'SMC'- or 'LMC'-like dust
+1e-2            # f_ion    ; Dust destruction factor (0 for max destr., 1 for no destr.)
+3.46            # z        ; Redshift of snapshot
+70.             # H_0      ; Hubble constant in km/s/Mpc
+.3              # Omega_M  ; Matter density fraction
+.7              # Omega_L  ; Cosmological constant density fraction
